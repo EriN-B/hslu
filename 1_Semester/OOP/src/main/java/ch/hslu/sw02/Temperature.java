@@ -1,27 +1,17 @@
+package ch.hslu.sw02;
+
 public class Temperature {
 
     private float temperature = 20.0F;
 
-    /**
-     * @param temperature (KELVIN)
-     */
     public Temperature(float temperature) {
         this.temperature = temperature;
     }
 
-    /**
-     *
-     * @param temperature (KELVIN)
-     */
     public void setTemperature(float temperature) {
         this.temperature = temperature;
     }
 
-    /**
-     *
-     * @param unit
-     * @return temperature in specified unit
-     */
     public float getTemperature(Unit unit) {
         switch (unit){
             case CELSIUS -> {
