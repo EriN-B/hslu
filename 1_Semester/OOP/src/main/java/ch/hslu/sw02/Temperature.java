@@ -26,6 +26,15 @@ public class Temperature {
         }
     }
 
+    /**
+     *
+     * @param element
+     * @return The aggregate state of an elements at the current temperature
+     */
+    public String getAggregateState(String element){
+        return Aggregate.getState(element, temperature);
+    }
+
     private float convertToCelsius(){
         return (temperature - 273.15F);
     }
